@@ -4,9 +4,7 @@ import Menu from "./components/Menu";
 import Contact from "./components/Contact";
 
 NavBar();
-// Home();
-// Menu()
-   Contact()
+Home();
 const nav = document.querySelectorAll(".nav");
 
 nav[0].addEventListener("click", Home);

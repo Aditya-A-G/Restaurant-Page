@@ -22,9 +22,12 @@ body {
   row-gap: 3em;
 }
 
-#content{
+#content {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-self: center;
+  height: 100%;
+  width: 100%;
 }
 
 .button {
@@ -37,7 +40,6 @@ body {
   border-radius: 8px;
   border: none;
 }
-
 
 .header {
   display: grid;
@@ -98,7 +100,6 @@ body {
   line-break: auto;
 }
 
-
 .media {
   display: flex;
 }
@@ -112,16 +113,15 @@ body {
   align-self: flex-start;
 }
 
-
-.card{
-  display:grid;
+.card {
+  display: grid;
   grid-template-columns: 1fr 2fr;
   border: 1px solid #d2326f;
   justify-items: center;
-  align-items:center;
+  align-items: center;
 }
 
-.details{
+.details {
   height: 100%;
   width: 100%;
   display: flex;
@@ -132,14 +132,49 @@ body {
   padding: 2em;
 }
 
-.details p:nth-child(1){
+.details p:nth-child(1) {
   font-size: 4.8rem;
 }
 
-.details p:nth-child(2){
+.details p:nth-child(2) {
   font-size: 2rem;
 }
 
-.card img{
-  height:250px;
+.card img {
+  height: 250px;
+}
+
+.contact {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  height: 10vh;
+  margin-bottom: 3.2em;
+}
+
+.heading h1 {
+  font-size: 4.8rem;
+}
+
+.contact p {
+  font-size: 3.2rem;
+}
+
+.contact p:nth-child(2)::after {
+  content: "  delhi, india.";
+  color: black;
+  font-size: 2.4rem;
+}
+.contact p:nth-child(3)::after {
+  content: "  +91 1234567890";
+  color: black;
+  font-size: 2.4rem;
+}
+
+.contact iframe {
+  margin-top: 3em;
+  height: 100%;
+  width: 100%;
 }
