@@ -1,6 +1,6 @@
 import food from "../images/bowl.png";
 import offer from "../images/offer.svg";
-
+import Button from "./Button";
 export default function () {
   const content = document.querySelector("#content");
   if (content.hasChildNodes()) {
@@ -11,7 +11,6 @@ export default function () {
   const infoDiv = document.createElement("div");
   const heading = document.createElement("h1");
   const para = document.createElement("p");
-  const button = document.createElement("button");
   const media = document.createElement("div");
   const bowlImg = document.createElement("img");
   const offerImg = document.createElement("img");
@@ -25,14 +24,13 @@ export default function () {
   heading.textContent = "Adding flavours to your meal!";
   para.textContent =
     "Explore our healthy meal delivery options. Create your own recipe by adding flavours to them!";
-  button.textContent = "Order Now";
 
   bowlImg.src = food;
   offerImg.src = offer;
 
   infoDiv.appendChild(heading);
   infoDiv.appendChild(para);
-  infoDiv.appendChild(button);
+  infoDiv.appendChild(Button());
 
   media.appendChild(bowlImg);
   media.appendChild(offerImg);

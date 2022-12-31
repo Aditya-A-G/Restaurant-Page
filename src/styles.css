@@ -22,6 +22,23 @@ body {
   row-gap: 3em;
 }
 
+#content{
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: fit-content;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background-color: #e25540;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+
 .header {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
@@ -50,6 +67,7 @@ body {
 
 .header div ul li {
   list-style-type: none;
+  cursor: pointer;
 }
 .profile {
   height: 25px;
@@ -59,7 +77,6 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2em;
 }
 
 .info {
@@ -81,10 +98,6 @@ body {
   line-break: auto;
 }
 
-.info button {
-  width: fit-content;
-  padding: 1em;
-}
 
 .media {
   display: flex;
@@ -97,4 +110,36 @@ body {
 
 .offer {
   align-self: flex-start;
+}
+
+
+.card{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #d2326f;
+  justify-items: center;
+  align-items:center;
+}
+
+.details{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6em;
+  padding: 2em;
+}
+
+.details p:nth-child(1){
+  font-size: 4.8rem;
+}
+
+.details p:nth-child(2){
+  font-size: 2rem;
+}
+
+.card img{
+  height:250px;
 }
